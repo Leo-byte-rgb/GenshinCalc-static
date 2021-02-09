@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Psoppins%26display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/paiomun.png">
+    <title>GenshinCalc</title>
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <h4>GenshinCalc</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/dicas">Dicas</a></li>
+            <li><a href="/infos">Informações</a></li>
+            <li><a href="/tierlist">Tierlist</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <form id="form">
+        <div class="grid-container">
+            <div class="form-group">
+                <label for="age">Dano Base do Personagem</label>
+                <input type="number" id="DbaseP" step="any"/>
+            </div>
+            <div class="form-group">
+                <label for="age">Dano Base das Armas</label>
+                <input type="number" id="DbaseA" step="any"/>
+            </div>
+            <div class="form-group">
+                <label for="age">Flat atk (Artefatos)</label>
+                <input type="number" id="FlatAtk" step="any"/>
+            </div>
+            <div class="form-group">
+                <label for="age">% atk - Artefatos</label>
+                <input type="number" id="perAtk" step="any"/>
+            </div>
+            <div class="form-group">
+                <label for="age">% Atk - Arma</label>
+                <input type="number" id="perAtkAr" step="any"/>
+            </div>
+            <div class="form-group">
+                <label for="age"> % ATK Bonus de Passiva do personagem</label>
+                <input type="number" id="atkPassiva" step="any"/>
+            </div>
+            <div class="form-group">
+                <label for="age"> Elemental e Bonus Dmg</label>
+                <input type="number" id="ElementalDmg" step="any"/>
+            </div>
+            <div class="form-group">
+                <label for="age">% Dano Critico do seu personagem</label>
+                <input type="number" id="critDmg" step="any"/>
+            </div>
+            <div class="form-group">
+                <label for="age">Taxa Critica</label>
+                <input type="number" id="txCrit" step="any"/>
+            </div>
+            <div class="form-group">
+                <label for="age">% Multiplicador de Skill</label>
+                <input type="number" id="skillMtp" step="any"/>
+            </div>
+            <div class="form-group">
+                <label for="age">Seu level</label>
+                <input type="number" id="level" step="any"/>
+            </div>
+            <div class="form-group">
+                <label for="age">Level do inimigo</label>
+                <input type="number" id="enemyLevel" step="any"/>
+            </div>
+            <div class="form-group">
+                <label for="age">DEF Reduced</label>
+                <input type="number" id="defReduce" step="any"/>
+            </div>
+            <div class="form-group">
+                <label for="age">% Res do inimigo</label>
+                <input type="number" id="resEnemy" step="any"/>
+            </div>
+            <div class="form-group">
+                <label for="age">Valor da reação</label>
+                <select id="reactionMltp">
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="age">% de aumento (proeficiencia)</label>
+                <input type="number" id="profi"  step="any"/>
+            </div>
+
+
+
+        </div>
+        <div class="form-group">
+            <button type="submit">Calcular!</button>
+        </div>
+
+    </form>
+    <div class="result-container" id="result"></div>
+
+    <footer id="footer">
+        <div class="grid-container">
+            <div class="about-me">
+                <h3>About me:</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
+            <div class="contact-me">
+                <h3>Contact me:</h3>
+                <a href=""><img src="./assets/images/linkedin.svg" alt="linkedin"></a>
+                <a href=""><img src="./assets/images/github.svg" alt="github"></a>
+                <a href=""><img src="./assets/images/instagram.svg" alt="instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/scripts/main.js" defer></script>
+    <script src="./assets/scripts/buttonListener.js"></script>
+
+</body>
+
+</html>
